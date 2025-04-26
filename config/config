@@ -1,0 +1,13 @@
+[general]
+pvss_path = "C:/Siemens/Automation/WinCC_OA/3.20"
+proj_path = "C:/WinCC_OA_Proj/3.20/SCMS"
+proj_version = "3.20"
+useNGA = 1
+useSQLite = 1
+langs = "en_US.utf8"
+langs = "vi_VN.utf8"
+[ui]
+defaultFont = "Noto Sans"
+[ui]
+versionControl = "git"
+versionControlDiff = "C:\Program Files\KDiff3\kdiff3.exe"
