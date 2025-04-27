@@ -1,0 +1,12 @@
+backup
+C:/WinCC_OA_Proj/3.20/SCMS/source/OnlineBackup/
+FILE
+0
+C:\WinCC_OA_Proj\3.20\SCMS\
+db\backup_db_SCMS_202504270400.txt
+db\wincc_oa\dbase.touch
+db\wincc_oa\sqlite\config.sqlite
+db\wincc_oa\sqlite\ident.sqlite
+db\wincc_oa\sqlite\last_alert.sqlite
+db\wincc_oa\sqlite\last_value.sqlite
+
