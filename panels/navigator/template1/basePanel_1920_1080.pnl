@@ -1,0 +1,206 @@
+V 14
+1
+LANG:10001 0 
+PANEL,-1 -1 1920 1080 N "_3DFace" 0
+"main()
+{
+  //position
+    header.position(0,0);
+    navi.position(0,50);
+    info.position(125,50);
+    subNavi.position(60,50);
+    mainPanel.position(225,100);
+
+  //size
+    header.size(1920,50);
+    navi.size(60,1030);
+    info.size(1795,50);
+    subNavi.size(165,1030);
+    mainPanel.size(1695,980);
+
+
+
+  header.ModuleName = \"header\";
+  RootPanelOnModule(\"navigator/template1/header_1920_50.pnl\",\"Test\",\"header\",\"\");
+   ModuleOnWithPanel(\"header\",230,20,200,300,1,1,
+   \"Zoom\",\"navigator/template1/header_1920_50.pnl\",\"moduleOff\",\"\");
+
+
+}" 0
+ E E E E 1 -1 -1 0  180 90
+""0  1
+E E 4
+"CBRef" "1"
+"EClose" E
+"dpi" "96"
+"pdpi" "95.8637"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+0
+29 1
+"header"
+""
+1 0 0 E E E 1 E 1 E N "_3DText" E N "STD_value_invalid" E E
+ E E
+0 0 0 0 0 0
+E E E
+0
+1
+LANG:10001 0 
+
+9
+"newPanelAnimDuration" "int 0"
+"oldPanelAnimDuration" "int 0"
+"newPanelAnimateOpacity" "bool TRUE"
+"oldPanelAnimateOpacity" "bool TRUE"
+"newPanelAnimateSize" "bool TRUE"
+"oldPanelAnimateSize" "bool TRUE"
+"newPanelAnimType" "string TopLeft"
+"oldPanelAnimType" "string BottomRight"
+"layoutAlignment" "AlignNone"
+2
+LANG:10001 43 Noto Sans,-1,16,5,400,0,0,0,0,0,0,0,0,0,0,1
+LANG:10038 43 Noto Sans,-1,16,5,400,0,0,0,0,0,0,0,0,0,0,1
+0  0 0 1919 49
+15 Canvas.Canvas.1
+0
+E29 2
+"mainPanel"
+""
+1 240 130.0000000000001 E E E 1 E 1 E N "_3DText" E N "WF_Error" E E
+ E E
+1 0 0 0 0 0
+E E E
+0
+1
+LANG:10001 0 
+
+9
+"newPanelAnimDuration" "int 0"
+"oldPanelAnimDuration" "int 0"
+"newPanelAnimateOpacity" "bool TRUE"
+"oldPanelAnimateOpacity" "bool TRUE"
+"newPanelAnimateSize" "bool TRUE"
+"oldPanelAnimateSize" "bool TRUE"
+"newPanelAnimType" "string TopLeft"
+"oldPanelAnimType" "string BottomRight"
+"layoutAlignment" "AlignNone"
+2
+LANG:10001 43 Noto Sans,-1,16,5,400,0,0,0,0,0,0,0,0,0,0,1
+LANG:10038 43 Noto Sans,-1,16,5,400,0,0,0,0,0,0,0,0,0,0,1
+0  240 130.0000000000001 1910 1060
+15 Canvas.Canvas.1
+0
+E29 3
+"navi"
+""
+1 0 60.00000000000012 E E E 1 E 1 E N "_3DText" E N "yellow" E E
+ E E
+2 0 0 0 0 0
+E E E
+0
+1
+LANG:10001 0 
+
+9
+"newPanelAnimDuration" "int 0"
+"oldPanelAnimDuration" "int 0"
+"newPanelAnimateOpacity" "bool TRUE"
+"oldPanelAnimateOpacity" "bool TRUE"
+"newPanelAnimateSize" "bool TRUE"
+"oldPanelAnimateSize" "bool TRUE"
+"newPanelAnimType" "string TopLeft"
+"oldPanelAnimType" "string BottomRight"
+"layoutAlignment" "AlignNone"
+2
+LANG:10001 43 Noto Sans,-1,16,5,400,0,0,0,0,0,0,0,0,0,0,1
+LANG:10038 43 Noto Sans,-1,16,5,400,0,0,0,0,0,0,0,0,0,0,1
+0  0 60.00000000000012 70 1070
+15 Canvas.Canvas.1
+0
+E29 4
+"info"
+""
+1 240 60 E E E 1 E 1 E N "_3DText" E N "WF_Banner" E E
+ E E
+3 0 0 0 0 0
+E E E
+0
+1
+LANG:10001 0 
+
+9
+"newPanelAnimDuration" "int 0"
+"oldPanelAnimDuration" "int 0"
+"newPanelAnimateOpacity" "bool TRUE"
+"oldPanelAnimateOpacity" "bool TRUE"
+"newPanelAnimateSize" "bool TRUE"
+"oldPanelAnimateSize" "bool TRUE"
+"newPanelAnimType" "string TopLeft"
+"oldPanelAnimType" "string BottomRight"
+"layoutAlignment" "AlignNone"
+2
+LANG:10001 43 Noto Sans,-1,16,5,400,0,0,0,0,0,0,0,0,0,0,1
+LANG:10038 43 Noto Sans,-1,16,5,400,0,0,0,0,0,0,0,0,0,0,1
+0  240 60 1989 109
+15 Canvas.Canvas.1
+0
+E29 5
+"subNavi"
+""
+1 90 60 E E E 1 E 1 E N "_3DText" E N "WF_Warning" E E
+ E E
+4 0 0 0 0 0
+E E E
+0
+1
+LANG:10001 0 
+
+9
+"newPanelAnimDuration" "int 0"
+"oldPanelAnimDuration" "int 0"
+"newPanelAnimateOpacity" "bool TRUE"
+"oldPanelAnimateOpacity" "bool TRUE"
+"newPanelAnimateSize" "bool TRUE"
+"oldPanelAnimateSize" "bool TRUE"
+"newPanelAnimType" "string TopLeft"
+"oldPanelAnimType" "string BottomRight"
+"layoutAlignment" "AlignNone"
+2
+LANG:10001 43 Noto Sans,-1,16,5,400,0,0,0,0,0,0,0,0,0,0,1
+LANG:10038 43 Noto Sans,-1,16,5,400,0,0,0,0,0,0,0,0,0,0,1
+0  90 60 224.9999999999999 1060
+15 Canvas.Canvas.1
+0
+E0
+LAYER, 1 
+0
+0
+LAYER, 2 
+0
+0
+LAYER, 3 
+0
+0
+LAYER, 4 
+0
+0
+LAYER, 5 
+0
+0
+LAYER, 6 
+0
+0
+LAYER, 7 
+0
+0
+4 0 "LAYOUT_GROUP1" -1
+5 0 
+1 2 3 4 5 
+
+"S 1" "0 0 1 1"
+"" ""
+0 4 0 0
+0

@@ -1,0 +1,71 @@
+V 14
+1
+LANG:10001 0 
+PANEL,-1 -1 1920 50 N "_3DFace" 0
+"main()
+{
+   this.horizontalScrollBarPolicy = \"Never\"; // Không hiển thị thanh cuộn ngang
+
+  // Bỏ thanh cuộn dọc
+  this.verticalScrollBarPolicy = \"Never\"; // Không hiển thị thanh cuộn dọc
+  this.verticalSizePolicy(0);
+}
+" 0
+ E E E E 1 -1 -1 0  40 70
+""0  1
+E E 4
+"CBRef" "1"
+"EClose" E
+"dpi" "96"
+"pdpi" "95.8637"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+0
+2 3
+"PRIMITIVE_TEXT1"
+""
+1 230 10 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+2 0 0 0 0 0
+E E E
+0
+1
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E U  0 E 230 10 1070 40
+0 2 2 "0s" 0 0 0 64 0 0  230 10 1
+2
+LANG:10001 43 Noto Sans,-1,16,5,400,0,0,0,0,0,0,0,0,0,0,1
+LANG:10038 43 Noto Sans,-1,16,5,400,0,0,0,0,0,0,0,0,0,0,1
+0 1
+LANG:10001 6 HEADER
+0
+LAYER, 1 
+0
+0
+LAYER, 2 
+0
+0
+LAYER, 3 
+0
+0
+LAYER, 4 
+0
+0
+LAYER, 5 
+0
+0
+LAYER, 6 
+0
+0
+LAYER, 7 
+0
+0
+0

@@ -9,4 +9,5 @@ WCCILevent       | always |      30 |        3 |        1 |
 WCCILproxy       | always |      30 |        2 |        2 |
 WCCOActrl        | always |      30 |        3 |        1 |-num 1 -f pvss_scripts.lst
 WCCILsim         | always |      30 |        3 |        1 |
-WCCOAui          |   once |      30 |        3 |        1 |-m gedi
+WCCOAui          |   once |      30 |        3 |        1 |-m gedi -user root:
+WCCOAui          | manual |      30 |        2 |        2 |-m vision:WinCC_OA,393x172+315+298 -p navigator\template1\basePanel_1920_1080.pnl -extend -iconBar -menuBar
