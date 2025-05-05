@@ -1,8 +1,8 @@
 V 14
 1
 LANG:10001 0 
-PANEL,-1 -1 400 400 N "_3DFace" 0
-E E E E E 1 -1 -1 0  -1 -1
+PANEL,-1 -1 1034 670 N "_3DFace" 0
+E E E E E 1 -1 -1 0  608 285.5542452830188
 ""0  1
 E E 4
 "CBRef" "1"
@@ -13,6 +13,8 @@ E E 4
 ""
 DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
 LAYER, 0 
+0
+1 1 0 "" 16
 0
 0
 LAYER, 1 
@@ -36,4 +38,10 @@ LAYER, 6
 LAYER, 7 
 0
 0
+3 0 "PANEL_REF1" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/LBP/LBP_3wVlv.xml" 608 285.5542452830188 T 0 U 
+1
+"$DP""ren1"
 0

@@ -1,32 +1,64 @@
 V 14
 1
 LANG:10001 0 
-PANEL,-1 -1 1920 1080 N "_3DFace" 0
+PANEL,-1 -1 1920 1080 N {237,239,241} 0
 "main()
 {
   //position
-    header.position(0,0);
-    navi.position(0,50);
-    info.position(125,50);
-    subNavi.position(60,50);
-    mainPanel.position(225,100);
+  header.position(0, 0);
+  info.position(225, 50);
+  navi.position(0, 50);
+  subNavi.position(60, 50);
+  mainPanel.position(225, 100);
 
   //size
-    header.size(1920,50);
-    navi.size(60,1030);
-    info.size(1795,50);
-    subNavi.size(165,1030);
-    mainPanel.size(1695,980);
+  header.size(1920, 50);
+  info.size(1695, 50);
+  navi.size(60, 1030);
+  subNavi.size(165, 1030);
+  mainPanel.size(1695, 980);
 
+//myPanel
+  moduleShowFullScreen(myModuleName());
 
-
+  //panels
   header.ModuleName = \"header\";
-  RootPanelOnModule(\"navigator/template1/header_1920_50.pnl\",\"Test\",\"header\",\"\");
-   ModuleOnWithPanel(\"header\",230,20,200,300,1,1,
-   \"Zoom\",\"navigator/template1/header_1920_50.pnl\",\"moduleOff\",\"\");
+  info.ModuleName = \"info\";
+  navi.ModuleName = \"navi\";
+  subNavi.ModuleName = \"subNavi\";
+  mainPanel.ModuleName = \"mainPanel\";
+  RootPanelOnModule(\"navigator/template1/header_1920_50.pnl\", \"header\", \"header\", \"\");
+  RootPanelOnModule(\"navigator/template1/info_1695_50.pnl\", \"info\", \"info\", \"\");
+  RootPanelOnModule(\"navigator/template1/navi_60_1030.pnl\", \"navi\", \"navi\", \"\");
+  RootPanelOnModule(\"navigator/template1/subnavi_165_1030.pnl\", \"subNavi\", \"subNavi\", \"\");
+  RootPanelOnModule(\"navigator/template1/mainPanel_1695_980.pnl\", \"mainPanel\", \"mainPanel\", \"\");
+
+  dpConnect(\"toggleNavi\", \"System1:user1.ui.toggleSubnavi\");
+}
+toggleNavi(string dpe, bool a)
+{
+  if (a == 1)
+  {
+    subNavi.visible(1);
+    subNavi.position(60, 50);
+    mainPanel.position(225, 100);
+    subNavi.size(165, 1030);
+    mainPanel.size(1695, 980);
+    info.position(225, 50);
+    info.size(1695, 50);
+  }
+
+  else
+  {
+    subNavi.visible(0);
+    mainPanel.position(60, 100);
+    mainPanel.size(1868, 980);
+    info.position(60, 50);
+    info.size(1868, 50);
+  }
 
 
-}" 0
+  }" 0
  E E E E 1 -1 -1 0  180 90
 ""0  1
 E E 4
@@ -50,7 +82,7 @@ E E E
 1
 LANG:10001 0 
 
-9
+12
 "newPanelAnimDuration" "int 0"
 "oldPanelAnimDuration" "int 0"
 "newPanelAnimateOpacity" "bool TRUE"
@@ -59,17 +91,20 @@ LANG:10001 0
 "oldPanelAnimateSize" "bool TRUE"
 "newPanelAnimType" "string TopLeft"
 "oldPanelAnimType" "string BottomRight"
+"shadowOffset" "[8,8]"
+"shadowColor" "{63,63,63,131}"
+"shadowRadius" "18"
 "layoutAlignment" "AlignNone"
 2
 LANG:10001 43 Noto Sans,-1,16,5,400,0,0,0,0,0,0,0,0,0,0,1
 LANG:10038 43 Noto Sans,-1,16,5,400,0,0,0,0,0,0,0,0,0,0,1
-0  0 0 1919 49
+0  0 0 1900 49
 15 Canvas.Canvas.1
 0
 E29 2
 "mainPanel"
 ""
-1 240 130.0000000000001 E E E 1 E 1 E N "_3DText" E N "WF_Error" E E
+1 238 126 E E E 1 E 1 E N "_3DText" E N "WF_Error" E E
  E E
 1 0 0 0 0 0
 E E E
@@ -90,7 +125,7 @@ LANG:10001 0
 2
 LANG:10001 43 Noto Sans,-1,16,5,400,0,0,0,0,0,0,0,0,0,0,1
 LANG:10038 43 Noto Sans,-1,16,5,400,0,0,0,0,0,0,0,0,0,0,1
-0  240 130.0000000000001 1910 1060
+0  238 126 1900 1060
 15 Canvas.Canvas.1
 0
 E29 3
@@ -123,7 +158,7 @@ LANG:10038 43 Noto Sans,-1,16,5,400,0,0,0,0,0,0,0,0,0,0,1
 E29 4
 "info"
 ""
-1 240 60 E E E 1 E 1 E N "_3DText" E N "WF_Banner" E E
+1 238 60 E E E 1 E 1 E N "_3DText" E N "WF_Banner" E E
  E E
 3 0 0 0 0 0
 E E E
@@ -144,7 +179,7 @@ LANG:10001 0
 2
 LANG:10001 43 Noto Sans,-1,16,5,400,0,0,0,0,0,0,0,0,0,0,1
 LANG:10038 43 Noto Sans,-1,16,5,400,0,0,0,0,0,0,0,0,0,0,1
-0  240 60 1989 109
+0  238 60 1900 109
 15 Canvas.Canvas.1
 0
 E29 5
@@ -200,7 +235,6 @@ LAYER, 7
 5 0 
 1 2 3 4 5 
 
-"S 1" "0 0 1 1"
 "" ""
 0 4 0 0
 0

@@ -1,8 +1,13 @@
 V 14
 1
 LANG:10001 0 
-PANEL,-1 -1 400 400 N "_3DFace" 0
-E E E E E 1 -1 -1 0  -1 -1
+PANEL,-1 -1 60 1030 N "White" 1
+"$setMainPanel"
+"main()
+{
+  this.maximumSize(60,1030);
+}" 0
+ E E E E 1 -1 -1 0  -392 267
 ""0  1
 E E 4
 "CBRef" "1"
@@ -13,6 +18,47 @@ E E 4
 ""
 DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
 LAYER, 0 
+0
+6 34
+"RECTANGLE6"
+""
+1 13 501 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+25 0 0 0 0 0
+E E E
+0
+1
+LANG:10001 0 
+
+6
+"shadowOffset" "[1,0]"
+"shadowColor" "{80,90,100,83}"
+"shadowRadius" "18"
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E -1 1 3 2 1 E 2.391304347826087 0 6.471698113207547 -29.82350773765661 -3245.556603773585 1 E 13 501 36 660
+1 1 1 "" 3
+0
+1 4 2 "" 3
+0
+1 7 3 "" 3
+0
+1 10 4 "" 3
+0
+1 13 5 "" 3
+0
+1 16 6 "" 3
+0
+1 19 7 "" 3
+0
+1 22 10 "" 3
+0
+1 25 11 "" 1
+0
+1 28 12 "" 1
+0
+1 31 13 "" 1
 0
 0
 LAYER, 1 
@@ -36,4 +82,87 @@ LAYER, 6
 LAYER, 7 
 0
 0
+3 1 "PANEL_REF2" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/uiSys/naviButton.pnl" 210 188 T 13 1 0 1 0 -67
+3
+"$iconName""dashboard"
+"$panelLevel""1"
+"$setMainPanel""\"panels/00. dashboard/dashboard.pnl\""
+3 2 "PANEL_REF3" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/uiSys/naviButton.pnl" 210 188 T 14 1 0 1 0 -8
+3
+"$iconName""gis"
+"$panelLevel""1"
+"$setMainPanel""\"panels/01. gis/gis.pnl\""
+3 3 "PANEL_REF4" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/uiSys/naviButton.pnl" 210 188 T 15 1 0 1 0 50.99999999999997
+3
+"$iconName""process"
+"$panelLevel""2"
+"$setMainPanel""\"panels/02. process/TSE.pnl\""
+3 4 "PANEL_REF5" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/uiSys/naviButton.pnl" 210 188 T 16 1 0 1 0 110
+3
+"$iconName""energy"
+"$panelLevel""2"
+"$setMainPanel""$setMainPanel"
+3 5 "PANEL_REF6" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/uiSys/naviButton.pnl" 210 188 T 17 1 0 1 0 169
+3
+"$iconName""trend"
+"$panelLevel""2"
+"$setMainPanel""$setMainPanel"
+3 6 "PANEL_REF7" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/uiSys/naviButton.pnl" 210 188 T 18 1 0 1 0 228
+3
+"$iconName""alarm"
+"$panelLevel"""
+"$setMainPanel""$setMainPanel"
+3 7 "PANEL_REF8" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/uiSys/naviButton.pnl" 210 188 T 19 1 0 1 0 287
+3
+"$iconName""report"
+"$panelLevel"""
+"$setMainPanel""$setMainPanel"
+3 10 "PANEL_REF11" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/uiSys/naviButton.pnl" 210 188 T 22 1 0 1 0 844
+3
+"$iconName""setting"
+"$panelLevel"""
+"$setMainPanel""$setMainPanel"
+3 11 "PANEL_REF12" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/uiSys/toggleNavi.pnl" -3.552713678800501e-15 -2.842170943040401e-14 T 23 U 
+2
+"$iconName1""icon_vNavi_light"
+"$iconName2""icon_hNavi_light"
+3 12 "PANEL_REF13" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/uiSys/NewFile.xml" 0 706 T 23 U 
+1
+"$setMainPanel""\"panels/00. dashboard/dashboard.pnl\""
+3 13 "PANEL_REF14" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/uiSys/NewFile.xml" 0 706 T 24 1 0 1 0 59.00000000000011
+1
+"$setMainPanel""\"panels/01. gis/gis.pnl\""
 0
