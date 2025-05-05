@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<panel version="14">
+ <properties>
+  <prop name="Name">
+   <prop name="en_US.utf8"></prop>
+  </prop>
+  <prop name="Size">1696 46</prop>
+  <prop name="BackColor">_3DFace</prop>
+  <prop name="RefPoint">114 107</prop>
+  <prop name="InitAndTermRef">True</prop>
+  <prop name="SendClick">False</prop>
+  <prop name="RefFileName"></prop>
+  <prop name="DPI">120</prop>
+  <prop name="PDPI">157.7402075661198</prop>
+  <prop name="layoutType">HBox</prop>
+ </properties>
+ <events>
+  <script isEscaped="1" name="Initialize"><![CDATA[main()
+{
+  dpConnect(&quot;updateStatus&quot;, &quot;System1:user1.ui.info.panelLevel&quot;, &quot;System1:user1.ui.info.selectedPanel&quot;);
+}
+
+
+updateStatus(string dp1, int panelLevel, string dp2, string selectedPanel)
+{
+  if (panelLevel == 2)
+    next2.visible(1);
+  else
+    next2.visible(0);
+
+
+}]]></script>
+ </events>
+ <shapes>
+  <shape Name="RECTANGLE4" layerId="0" shapeType="RECTANGLE">
+   <properties>
+    <prop name="serialId">1</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">71 49</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">{0,0,0}</prop>
+    <prop name="BackColor">{255,255,255}</prop>
+    <prop name="TabOrder">0</prop>
+    <prop name="ToolTipText">
+     <prop name="en_US.utf8"></prop>
+    </prop>
+    <prop name="maximumSize">17 17</prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="DashBackColor">_Transparent</prop>
+    <prop name="AntiAliased">False</prop>
+    <prop name="LineType">[none,oneColor,JoinBevel,CapProjecting,1]</prop>
+    <prop name="BorderZoomable">False</prop>
+    <prop name="BorderScalable">False</prop>
+    <prop SharedPixmap="1" name="FillType">[pattern,[fit,any,pictures/00. icon/icon_home_light.svg]]</prop>
+    <prop name="Geometry">0.4648212226066898 0 0 0.5984917043740572 18.99769319492504 -14.32609351432882</prop>
+    <prop name="BorderStyle">Normal</prop>
+    <prop name="Location">71 49</prop>
+    <prop name="Size">35 27</prop>
+    <prop name="CornerRadius">0</prop>
+    <prop name="Transformable">True</prop>
+   </properties>
+   <events>
+    <script isEscaped="1" name="Clicked"><![CDATA[main(mapping event)
+{
+   dpSet(&quot;System1:user1.ui.info.panelLevel:_original.._value&quot;, $panelLevel);
+  dpSet(&quot;System1:user1.ui.info.selectedPanel:_original.._value&quot;, $setMainPanel);
+}]]></script>
+   </events>
+  </shape>
+  <shape Name="next1" layerId="0" shapeType="RECTANGLE">
+   <properties>
+    <prop name="serialId">3</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">79 46</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">{0,0,0}</prop>
+    <prop name="BackColor">{255,255,255}</prop>
+    <prop name="TabOrder">1</prop>
+    <prop name="ToolTipText">
+     <prop name="en_US.utf8"></prop>
+    </prop>
+    <prop name="maximumSize">10 21</prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="DashBackColor">_Transparent</prop>
+    <prop name="AntiAliased">False</prop>
+    <prop name="LineType">[none,oneColor,JoinBevel,CapProjecting,1]</prop>
+    <prop name="BorderZoomable">False</prop>
+    <prop name="BorderScalable">False</prop>
+    <prop SharedPixmap="1" name="FillType">[pattern,[fit,any,pictures/00. icon/icon_next_light.svg]]</prop>
+    <prop name="Geometry">0.2610722610722611 0 0 0.8478260869565212 75.54562104562103 -26.94602272727272</prop>
+    <prop name="BorderStyle">Normal</prop>
+    <prop name="Location">79 46</prop>
+    <prop name="Size">34 24</prop>
+    <prop name="CornerRadius">0</prop>
+    <prop name="Transformable">True</prop>
+   </properties>
+  </shape>
+  <shape Name="PRIMITIVE_TEXT1" layerId="0" shapeType="PRIMITIVE_TEXT">
+   <properties>
+    <prop name="serialId">4</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">147 21.91256009615385</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">WF_Text</prop>
+    <prop name="BackColor">_Window</prop>
+    <prop name="TabOrder">2</prop>
+    <prop name="ToolTipText">
+     <prop name="en_US.utf8"></prop>
+    </prop>
+    <prop name="maximumSize">-1 18</prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="DashBackColor">_Transparent</prop>
+    <prop name="AntiAliased">False</prop>
+    <prop name="LineType">[solid,oneColor,JoinBevel,CapProjecting,1]</prop>
+    <prop name="BorderZoomable">False</prop>
+    <prop name="BorderScalable">False</prop>
+    <prop name="FillType">[outline]</prop>
+    <prop name="Geometry">1 0 0 0.6538461538461539 0 7.615384615384613</prop>
+    <prop name="Location">147 21.91256009615385</prop>
+    <prop name="Font">
+     <prop name="en_US.utf8">Noto Sans,-1,20,5,400,0,0,0,0,0,0,0,0,0,0,1</prop>
+     <prop name="vi_VN.utf8">Noto Sans,-1,20,5,400,0,0,0,0,0,0,0,0,0,0,1</prop>
+    </prop>
+    <prop name="Text">
+     <prop name="en_US.utf8">Panel Level</prop>
+    </prop>
+    <prop name="Distance">2</prop>
+    <prop name="BorderOffset">2</prop>
+    <prop name="Bordered">False</prop>
+    <prop name="Fit">True</prop>
+    <prop name="Transformable">False</prop>
+    <prop name="TextFormat">[0s,,,AlignLeft|AlignVCenter]</prop>
+   </properties>
+  </shape>
+  <shape Name="pn2" layerId="0" shapeType="PRIMITIVE_TEXT">
+   <properties>
+    <prop name="serialId">5</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">327.5 21.91256009615385</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">WF_Text</prop>
+    <prop name="BackColor">_Window</prop>
+    <prop name="TabOrder">3</prop>
+    <prop name="ToolTipText">
+     <prop name="en_US.utf8"></prop>
+    </prop>
+    <prop name="maximumSize">-1 18</prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="DashBackColor">_Transparent</prop>
+    <prop name="AntiAliased">False</prop>
+    <prop name="LineType">[solid,oneColor,JoinBevel,CapProjecting,1]</prop>
+    <prop name="BorderZoomable">False</prop>
+    <prop name="BorderScalable">False</prop>
+    <prop name="FillType">[outline]</prop>
+    <prop name="Location">327.5 21.91256009615385</prop>
+    <prop name="Font">
+     <prop name="en_US.utf8">Noto Sans,-1,20,5,400,0,0,0,0,0,0,0,0,0,0,1</prop>
+     <prop name="vi_VN.utf8">Noto Sans,-1,20,5,400,0,0,0,0,0,0,0,0,0,0,1</prop>
+    </prop>
+    <prop name="Text">
+     <prop name="en_US.utf8">Panel Name</prop>
+    </prop>
+    <prop name="Distance">2</prop>
+    <prop name="BorderOffset">2</prop>
+    <prop name="Bordered">False</prop>
+    <prop name="Fit">True</prop>
+    <prop name="Transformable">False</prop>
+    <prop name="TextFormat">[0s,,,AlignLeft|AlignVCenter]</prop>
+   </properties>
+  </shape>
+  <shape Name="SPACER1" layerId="0" shapeType="SPACER">
+   <properties>
+    <prop name="serialId">7</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">72.3636363636364 12</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">{0,0,0}</prop>
+    <prop name="BackColor">{255,255,255}</prop>
+    <prop name="TabOrder">5</prop>
+    <prop name="ToolTipText">
+     <prop name="en_US.utf8"></prop>
+    </prop>
+    <prop name="TransparentForMouse">True</prop>
+    <prop name="maximumSize">21 -1</prop>
+    <prop name="sizePolicy">
+     <sizePolicy horizontal="Expanding" vertical="Ignored"/>
+    </prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="Location">72.3636363636364 12</prop>
+    <prop name="Size">21 21</prop>
+    <prop name="Orientation">horizontal</prop>
+   </properties>
+  </shape>
+  <shape Name="SPACER5" layerId="0" shapeType="SPACER">
+   <properties>
+    <prop name="serialId">11</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">24.63636363636368 15</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">{0,0,0}</prop>
+    <prop name="BackColor">{255,255,255}</prop>
+    <prop name="TabOrder">9</prop>
+    <prop name="ToolTipText">
+     <prop name="en_US.utf8"></prop>
+    </prop>
+    <prop name="TransparentForMouse">True</prop>
+    <prop name="maximumSize">20 -1</prop>
+    <prop name="sizePolicy">
+     <sizePolicy horizontal="Expanding" vertical="Ignored"/>
+    </prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="Location">24.63636363636368 15</prop>
+    <prop name="Size">20 15</prop>
+    <prop name="Orientation">horizontal</prop>
+   </properties>
+  </shape>
+  <shape Name="SPACER6" layerId="0" shapeType="SPACER">
+   <properties>
+    <prop name="serialId">12</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">462.5909090909072 15</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">{0,0,0}</prop>
+    <prop name="BackColor">{255,255,255}</prop>
+    <prop name="TabOrder">10</prop>
+    <prop name="ToolTipText">
+     <prop name="en_US.utf8"></prop>
+    </prop>
+    <prop name="TransparentForMouse">True</prop>
+    <prop name="sizePolicy">
+     <sizePolicy horizontal="Expanding" vertical="Ignored"/>
+    </prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="Location">462.5909090909072 15</prop>
+    <prop name="Size">526 15</prop>
+    <prop name="Orientation">horizontal</prop>
+   </properties>
+  </shape>
+  <shape Name="SPACER7" layerId="0" shapeType="SPACER">
+   <properties>
+    <prop name="serialId">13</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">118.1363636363637 15</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">{0,0,0}</prop>
+    <prop name="BackColor">{255,255,255}</prop>
+    <prop name="TabOrder">11</prop>
+    <prop name="ToolTipText">
+     <prop name="en_US.utf8"></prop>
+    </prop>
+    <prop name="TransparentForMouse">True</prop>
+    <prop name="maximumSize">20 -1</prop>
+    <prop name="sizePolicy">
+     <sizePolicy horizontal="Expanding" vertical="Ignored"/>
+    </prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="Location">118.1363636363637 15</prop>
+    <prop name="Size">21 15</prop>
+    <prop name="Orientation">horizontal</prop>
+   </properties>
+  </shape>
+  <shape Name="SPACER8" layerId="0" shapeType="SPACER">
+   <properties>
+    <prop name="serialId">14</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">258.1363636363637 15</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">{0,0,0}</prop>
+    <prop name="BackColor">{255,255,255}</prop>
+    <prop name="TabOrder">12</prop>
+    <prop name="ToolTipText">
+     <prop name="en_US.utf8"></prop>
+    </prop>
+    <prop name="TransparentForMouse">True</prop>
+    <prop name="maximumSize">20 -1</prop>
+    <prop name="sizePolicy">
+     <sizePolicy horizontal="Expanding" vertical="Ignored"/>
+    </prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="Location">258.1363636363637 15</prop>
+    <prop name="Size">21 15</prop>
+    <prop name="Orientation">horizontal</prop>
+   </properties>
+  </shape>
+  <shape Name="SPACER9" layerId="0" shapeType="SPACER">
+   <properties>
+    <prop name="serialId">15</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">296.6363636363637 15</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">{0,0,0}</prop>
+    <prop name="BackColor">{255,255,255}</prop>
+    <prop name="TabOrder">13</prop>
+    <prop name="ToolTipText">
+     <prop name="en_US.utf8"></prop>
+    </prop>
+    <prop name="TransparentForMouse">True</prop>
+    <prop name="maximumSize">20 -1</prop>
+    <prop name="sizePolicy">
+     <sizePolicy horizontal="Expanding" vertical="Ignored"/>
+    </prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="Location">296.6363636363637 15</prop>
+    <prop name="Size">20 15</prop>
+    <prop name="Orientation">horizontal</prop>
+   </properties>
+  </shape>
+  <shape Name="next2" layerId="0" shapeType="RECTANGLE">
+   <properties>
+    <prop name="serialId">17</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">79 46</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">False</prop>
+    <prop name="ForeColor">{0,0,0}</prop>
+    <prop name="BackColor">{255,255,255}</prop>
+    <prop name="TabOrder">15</prop>
+    <prop name="ToolTipText">
+     <prop name="en_US.utf8"></prop>
+    </prop>
+    <prop name="maximumSize">10 21</prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="DashBackColor">_Transparent</prop>
+    <prop name="AntiAliased">False</prop>
+    <prop name="LineType">[none,oneColor,JoinBevel,CapProjecting,1]</prop>
+    <prop name="BorderZoomable">False</prop>
+    <prop name="BorderScalable">False</prop>
+    <prop SharedPixmap="1" name="FillType">[pattern,[fit,any,pictures/00. icon/icon_next_light.svg]]</prop>
+    <prop name="Geometry">0.2610722610722611 0 0 0.8478260869565212 264.3193473193475 -26.76923076923075</prop>
+    <prop name="BorderStyle">Normal</prop>
+    <prop name="Location">79 46</prop>
+    <prop name="Size">34 24</prop>
+    <prop name="CornerRadius">0</prop>
+    <prop name="Transformable">True</prop>
+   </properties>
+  </shape>
+ </shapes>
+ <groups>
+  <layout Name="LAYOUT_GROUP9" parentSerial="-1" serial="0">
+   <properties>
+    <prop idx="1" name="shapeSerial">1</prop>
+    <prop idx="3" name="shapeSerial">3</prop>
+    <prop idx="5" name="shapeSerial">4</prop>
+    <prop idx="9" name="shapeSerial">5</prop>
+    <prop idx="2" name="shapeSerial">7</prop>
+    <prop idx="0" name="shapeSerial">11</prop>
+    <prop idx="10" name="shapeSerial">12</prop>
+    <prop idx="4" name="shapeSerial">13</prop>
+    <prop idx="6" name="shapeSerial">14</prop>
+    <prop idx="8" name="shapeSerial">15</prop>
+    <prop idx="7" name="shapeSerial">17</prop>
+    <prop name="isContainerShape">False</prop>
+    <prop name="layoutType">HBox</prop>
+    <prop name="layoutLeftMargin">0</prop>
+    <prop name="layoutRightMargin">0</prop>
+    <prop name="layoutTopMargin">1</prop>
+    <prop name="layoutBottomMargin">0</prop>
+   </properties>
+  </layout>
+ </groups>
+</panel>

@@ -1,0 +1,65 @@
+V 14
+1
+LANG:10001 0 
+PANEL,-1 -1 1965 51 N {237,239,241} 2
+"$panelLevel"
+"$setMainPanel"
+"main()
+{
+ // this.maximumSize(1696,50);
+}" 0
+ E "main(int x, int y, mapping event)
+{
+  DebugN(\"haha\");
+}" 0
+ E E 1 -1 -1 0  96 8
+""0  1
+E E 4
+"CBRef" "1"
+"EClose" E
+"dpi" "120"
+"pdpi" "157.74"
+1 1 0 0 0 5 1 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+0
+1 37 0 "" 1
+0
+0
+LAYER, 1 
+0
+0
+LAYER, 2 
+0
+0
+LAYER, 3 
+0
+0
+LAYER, 4 
+0
+0
+LAYER, 5 
+0
+0
+LAYER, 6 
+0
+0
+LAYER, 7 
+0
+0
+3 0 "PANEL_REF3" 1
+"layoutAlignment" "AlignNone"
+"" ""
+"navigator/template1/sub/infor.xml" 260 5.199285896812953 T 10 0.9884887839433295 0 0.6333333333333326 -237.0070838252656 -0.7928810679815073
+2
+"$panelLevel""$panelLevel"
+"$setMainPanel""$setMainPanel"
+4 1 "LAYOUT_GROUP2" -1
+0 1 
+
+0 
+"G 0" "0 0 1 1"
+"" ""
+0 1 0 0
+0
